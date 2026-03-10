@@ -1,0 +1,64 @@
+header h3, header p{
+    margin: 0;
+}
+.testimonials-container{
+    background-color: #dcdcdc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "osama osama ahmed shady"
+    "mohamed mahmoud mahmoud shady"
+    "mohamed ezz ezz shady"
+    "MOHAMED ibrahim gamal eman";
+    padding: 22px;
+    gap: 8px;
+}
+.card-osama, .card-ahmed, .card-moIb, .card-ezz, .card-moSy, .card-gamal, .card-eman{
+    background-color: white;
+}
+.card-shady, .card-ibrahim, .card-mahmoud{
+    background-color: black;
+    color: white;
+}
+.card-osama{
+    grid-area: osama;
+}
+.card-ahmed{
+    grid-area: ahmed;
+}
+.card-shady{
+    grid-area: shady;
+}
+.card-moIb{
+    grid-area: mohamed;
+}
+.card-mahmoud{
+    grid-area: mahmoud;
+}
+.card-ezz{
+    grid-area: ezz;
+}
+.card-moSy{
+    grid-area: MOHAMED;
+}
+.card-ibrahim{
+    grid-area: ibrahim;
+}
+.card-gamal{
+    grid-area: gamal;
+}
+.card-eman{
+    grid-area: eman;
+}
+article{
+    border-bottom: red 2px solid;
+}
+.job-title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    font-weight: bolder;
+}
+.main-text{
+    font-weight: bolder;
+}

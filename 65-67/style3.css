@@ -1,0 +1,47 @@
+div {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #eee;
+    border-radius: 50%;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 200px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: relative;  
+}
+
+div::before,
+div::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -10px; 
+    left: -10px;
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    transition: transform 0.4s linear; 
+}
+
+div::before {
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transform: scale(1.09) rotate(0deg);
+    z-index: 1;
+}
+
+div::after {
+    border-color: #2196f3 #2196f3 #2196f3 transparent;
+    transform: scale(1.2) rotate(180deg);
+    z-index: 2;
+    transition-delay: 0.5s; 
+}
+
+div:hover::before {
+    transform: scale(1.09) rotate(360deg);
+}
+
+div:hover::after {
+    transform: scale(1.2) rotate(540deg); /* 180 (البداية) + 360 (لفة كاملة) */
+}
