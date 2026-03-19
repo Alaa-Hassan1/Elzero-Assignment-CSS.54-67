@@ -1,0 +1,91 @@
+.page{
+    width: 450px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logos, .sign, .user{
+    display: flex;
+}
+.logos{
+    justify-content: center;
+    gap: 15px;
+}
+.face, .twitter{
+    color: white;
+    flex: 1;
+    padding: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+.face::before{
+    content: 'f';
+    position: absolute;
+    color: white;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 30px;
+}
+.face, .login{
+    background-color: #3b5998;
+}
+.twitter{
+    position: relative;
+    background-color: #1da1f2;
+}
+.twitter::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-image: url('https://img.icons8.com/ios-filled/50/ffffff/twitter.png');
+    background-size: contain;
+}
+
+.sign{
+    justify-content: space-between;
+}
+
+.or{
+    display: flex;
+    background-color: #c9c9c9ee;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.user{
+    flex-direction: column;
+    gap: 10px;
+}
+.user input, .member{
+    padding: 10px;
+}
+
+.sign{
+    padding: 10px 0;
+}
+.group-keep{
+    display: flex;
+    align-content: center;
+}
+
+.login{
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+.span{
+    color: rgb(4, 195, 237);
+}
